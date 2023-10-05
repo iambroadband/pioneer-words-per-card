@@ -1,2 +1,0 @@
-recordclass==0.17.5
-scrython==1.11.0

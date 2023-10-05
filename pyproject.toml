@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pioneer-words-per-card"
+version = "0.1.0"
+description = ""
+authors = ["broadband <iambroadband@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+scooze = "^1.0.4"
+scrython = "^1.11.0"
+recordclass = "^0.20.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
