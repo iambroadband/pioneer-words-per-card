@@ -1,14 +1,14 @@
 1 Abrade
-4 Blightstep Pathway
+4 Blightstep Pathway // Searstep Pathway
 4 Blood Crypt
 4 Bloodtithe Harvester
-4 Bonecrusher Giant
+4 Bonecrusher Giant // Stomp
 1 Chandra, Torch of Defiance
 2 Den of the Bugbear
 2 Dreadbore
-4 Fable of the Mirror-Breaker
+4 Fable of the Mirror-Breaker // Reflection of Kiki-Jiki
 4 Fatal Push
-3 Graveyard Trespasser
+3 Graveyard Trespasser // Graveyard Glutton
 4 Haunted Ridge
 2 Hive of the Eye Tyrant
 1 Kroxa, Titan of Death's Hunger
@@ -27,8 +27,8 @@
 2 Duress
 2 Extinction Event
 1 Go Blank
-1 Graveyard Trespasser
-2 Hidetsugu Consumes All
+1 Graveyard Trespasser // Graveyard Glutton
+2 Hidetsugu Consumes All // Vessel of the All-Consuming
 1 Kaervek, the Spiteful
 2 Rending Volley
 1 Skysovereign, Consul Flagship

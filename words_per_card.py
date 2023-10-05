@@ -30,23 +30,26 @@ def main():
 
         for filename in os.scandir(deck_dir):
             if filename.is_file():
-                # print(filename.path)
-                with open(filename.path) as deck_file:
-                    deck = Deck(
-                        archetype=os.path.basename(filename.path).split(".")[0],
-                    )
+                print(filename.path)
+                if filename.path.endswith("Rakdos Midrange.txt"): # FIXME: this is a test to only use Rakdos Midrange because flip cards aren't working in scooze
+                    with open(filename.path) as deck_file:
+                        deck = Deck(
+                            archetype=os.path.basename(filename.path).split(".")[0],
+                        )
 
-                    for line in deck_file:
-                        if not line.isspace():
-                            # print(line)
-                            (quantity, card_name) = line.split(" ", 1)
-                            quantity = int(quantity)
-                            card = scooze.get_card_by_name(card_name)
-                            deck.add_card(card)
+                        for line in deck_file:
+                            if not line.isspace():
+                                # print(line)
+                                (quantity, card_name) = line.split(" ", 1)
+                                quantity = int(quantity)
+                                card_name = card_name.strip()
+                                card = scooze.get_card_by_name(card_name)
+                                deck.add_card(card, quantity)
 
-                    decks.append(deck)
+                        decks.append(deck)
 
-        for deck in sorted(decks, key=lambda d: d.average_words_per_card, reverse=True):
+        # TODO: could sort here
+        for deck in decks:
             print(f"{deck.archetype} - {deck.average_words()}")
 
 
