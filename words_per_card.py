@@ -1,14 +1,13 @@
 import os
-from recordclass import dataobject
-import scrython
 from typing import List
 
+import scooze.bulkdata as bulk
+import scrython
+from scooze.api import ScoozeApi
+from scooze.catalogs import ScryfallBulkFile
+from scooze.deck import Deck
 
-class Deck(dataobject):
-    name: str
-    size: int
-    total_words: int
-    average_words_per_card: int
+DOWNLOAD_CARDS = False
 
 
 def word_count(card: scrython.cards.named.Named) -> int:
@@ -21,36 +20,34 @@ def word_count(card: scrython.cards.named.Named) -> int:
 
 
 def main():
-    deck_dir = "./decks"
-    decks: List[Deck] = []
+    with ScoozeApi() as scooze:
+        if DOWNLOAD_CARDS:
+            bulk.download_bulk_data_file_by_type(ScryfallBulkFile.ORACLE)
+            scooze.load_card_file(ScryfallBulkFile.ORACLE)
 
-    for filename in os.scandir(deck_dir):
-        if filename.is_file():
-            # print(filename.path)
-            with open(filename.path) as deck_file:
-                deck = Deck(
-                    name=os.path.basename(filename.path).split(".")[0],
-                    size=0,
-                    total_words=0,
-                    average_words_per_card=0,
-                )
+        deck_dir = "./decks"
+        decks: List[Deck] = []
 
-                for line in deck_file:
-                    if not line.isspace():
-                        # print(line)
-                        (quantity, card_name) = line.split(" ", 1)
-                        quantity = int(quantity)
-                        card = scrython.cards.Named(fuzzy=card_name)
-                        line_words = quantity * word_count(card)
+        for filename in os.scandir(deck_dir):
+            if filename.is_file():
+                # print(filename.path)
+                with open(filename.path) as deck_file:
+                    deck = Deck(
+                        archetype=os.path.basename(filename.path).split(".")[0],
+                    )
 
-                        deck.size += quantity
-                        deck.total_words += line_words
+                    for line in deck_file:
+                        if not line.isspace():
+                            # print(line)
+                            (quantity, card_name) = line.split(" ", 1)
+                            quantity = int(quantity)
+                            card = scooze.get_card_by_name(card_name)
+                            deck.add_card(card)
 
-                deck.average_words_per_card = deck.total_words / deck.size
-                decks.append(deck)
+                    decks.append(deck)
 
-    for deck in sorted(decks, key=lambda d: d.average_words_per_card, reverse=True):
-        print(deck)
+        for deck in sorted(decks, key=lambda d: d.average_words_per_card, reverse=True):
+            print(f"{deck.archetype} - {deck.average_words()}")
 
 
 if __name__ == "__main__":
