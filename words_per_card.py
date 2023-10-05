@@ -49,8 +49,9 @@ def main():
                         decks.append(deck)
 
         # TODO: could sort here
+        print("Deck Archetype\tTotal Words\tAverage Words")
         for deck in decks:
-            print(f"{deck.archetype} - {deck.average_words()}")
+            print(f"{deck.archetype}\t{deck.total_words()}\t\t{deck.average_words()}")
 
 
 if __name__ == "__main__":
