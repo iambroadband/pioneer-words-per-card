@@ -3,14 +3,14 @@
 4 Razorverge Thicket
 5 Plains
 2 Overgrown Farmland
-4 Katilda, Dawnhart Martyr
+4 Katilda, Dawnhart Martyr // Katilda's Rising Dawn
 4 Hallowed Haunting
-2 Wedding Announcement
-4 The Restoration of Eiganjo
+2 Wedding Announcement // Wedding Festivity
+4 The Restoration of Eiganjo // Architect of Restoration
 4 Spirited Companion
 4 Commune with Spirits
 4 Generous Visitor
-4 Teachings of the Kirin
+4 Teachings of the Kirin // Kirin-Touched Orochi
 4 Jukai Naturalist
 1 Boseiju, Who Endures
 4 Ossification
@@ -21,7 +21,7 @@
 2 Curse of Silence
 1 Lantern Flare
 1 Touch the Spirit Realm
-2 Wedding Announcement
+2 Wedding Announcement // Wedding Festivity
 1 Vanquish the Horde
 1 Rite of Harmony
 2 The Stone Brain

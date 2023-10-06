@@ -1,15 +1,15 @@
 3 Adarkar Wastes
-1 Barkchannel Pathway
+1 Barkchannel Pathway // Tidechannel Pathway
 3 Botanical Sanctum
-4 Branchloft Pathway
+4 Branchloft Pathway // Boulderloft Pathway
 1 Breeding Pool
 4 Collected Company
 1 Eiganjo, Seat of the Empire
 2 Empyrean Eagle
 4 Hallowed Fountain
-3 Hengegate Pathway
+3 Hengegate Pathway // Mistgate Pathway
 1 Island
-1 Katilda, Dawnhart Martyr
+1 Katilda, Dawnhart Martyr // Katilda's Rising Dawn
 4 Mausoleum Wanderer
 1 Otawara, Soaring City
 4 Rattlechains
@@ -24,10 +24,10 @@
 1 Toski, Bearer of Secrets
 
 3 Extraction Specialist
-1 Katilda, Dawnhart Martyr
+1 Katilda, Dawnhart Martyr // Katilda's Rising Dawn
 3 Lofty Denial
 3 Portable Hole
-1 Reidane, God of the Worthy
+1 Reidane, God of the Worthy // Valkmira, Protector's Shield
 1 Skyclave Apparition
 1 Spirit of the Labyrinth
 2 Unlicensed Hearse

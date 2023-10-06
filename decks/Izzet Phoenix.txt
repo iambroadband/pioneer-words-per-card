@@ -13,14 +13,14 @@
 4 Opt
 1 Otawara, Soaring City
 3 Pieces of the Puzzle
-4 Riverglide Pathway
+4 Riverglide Pathway // Lavaglide Pathway
 1 Spell Pierce
 4 Spirebluff Canal
 4 Steam Vents
 3 Stormcarved Coast
 3 Strategic Planning
 1 Temporal Trespass
-4 Thing in the Ice
+4 Thing in the Ice // Awoken Horror
 4 Treasure Cruise
 
 1 Abrade

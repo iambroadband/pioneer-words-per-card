@@ -2,7 +2,7 @@
 1 Boseiju, Who Endures
 3 Can't Stay Away
 4 Concealed Courtyard
-4 Darkbore Pathway
+4 Darkbore Pathway // Slitherbore Pathway
 2 Duress
 4 Esika's Chariot
 1 Godless Shrine
@@ -23,6 +23,6 @@
 3 Abrupt Decay
 2 Duress
 4 Fatal Push
-3 Graveyard Trespasser
+3 Graveyard Trespasser // Graveyard Glutton
 1 Skysovereign, Consul Flagship
 2 Unlicensed Hearse

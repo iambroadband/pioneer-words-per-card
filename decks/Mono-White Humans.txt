@@ -1,13 +1,13 @@
 2 Adeline, Resplendent Cathar
 4 Brave the Elements
-4 Brutal Cathar
+4 Brutal Cathar // Moonrage Brute
 2 Cave of the Frost Dragon
 4 Dauntless Bodyguard
 2 Eiganjo, Seat of the Empire
 2 Extraction Specialist
 2 Gideon, Ally of Zendikar
 4 Hopeful Initiate
-1 Kytheon, Hero of Akros
+1 Kytheon, Hero of Akros // Gideon, Battle-Forged
 4 Luminarch Aspirant
 4 Mutavault
 13 Plains
@@ -18,7 +18,7 @@
 
 2 Declaration in Stone
 4 Portable Hole
-2 Reidane, God of the Worthy
+2 Reidane, God of the Worthy // Valkmira, Protector's Shield
 2 Rest in Peace
 3 Thalia, Guardian of Thraben
-2 Wedding Announcement
+2 Wedding Announcement // Wedding Festivity

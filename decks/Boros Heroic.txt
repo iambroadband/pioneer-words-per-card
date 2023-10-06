@@ -10,11 +10,11 @@
 4 Inspiring Vantage
 2 Invigorated Rampage
 4 Monastery Swiftspear
-4 Needleverge Pathway
+4 Needleverge Pathway // Pillarverge Pathway
 1 Plains
 4 Reckless Rage
 4 Sacred Foundry
-2 Sejiri Shelter
+2 Sejiri Shelter // Sejiri Glacier
 4 Tenth District Legionnaire
 
 2 Abrade
